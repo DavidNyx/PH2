@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\GitHub\PH2\PH2\bin\Debug\PH2.exe.config
+C:\Users\Admin\Documents\GitHub\PH2\PH2\bin\Debug\PH2.exe
+C:\Users\Admin\Documents\GitHub\PH2\PH2\bin\Debug\PH2.pdb
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.Login.resources
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.MenuCSYT.resources
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.exe
+C:\Users\Admin\Documents\GitHub\PH2\PH2\obj\Debug\PH2.pdb
