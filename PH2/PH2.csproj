@@ -66,6 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XemTTBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemTTBN.Designer.cs">
+      <DependentUpon>XemTTBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemTTNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemTTNV.Designer.cs">
+      <DependentUpon>XemTTNV.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +96,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="XemTTBN.resx">
+      <DependentUpon>XemTTBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemTTNV.resx">
+      <DependentUpon>XemTTNV.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
