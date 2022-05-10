@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgv_DVlist = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DVlist)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -43,24 +43,25 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "DỊCH VỤ";
             // 
-            // dataGridView1
+            // dgv_DVlist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(440, 167);
-            this.dataGridView1.TabIndex = 10;
+            this.dgv_DVlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DVlist.Location = new System.Drawing.Point(12, 49);
+            this.dgv_DVlist.Name = "dgv_DVlist";
+            this.dgv_DVlist.Size = new System.Drawing.Size(440, 167);
+            this.dgv_DVlist.TabIndex = 10;
             // 
             // Dichvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 228);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_DVlist);
             this.Controls.Add(this.label1);
             this.Name = "Dichvu";
             this.Text = "Dichvu";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Dichvu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DVlist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,6 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_DVlist;
     }
 }

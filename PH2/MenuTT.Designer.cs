@@ -30,10 +30,10 @@ namespace PH2
         private void InitializeComponent()
         {
             this.Menu = new System.Windows.Forms.Label();
-            this.Select_NVbtn = new System.Windows.Forms.Button();
-            this.Select_BNbtn = new System.Windows.Forms.Button();
-            this.Select_HSBAbtn = new System.Windows.Forms.Button();
-            this.Returnbtn = new System.Windows.Forms.Button();
+            this.btn_Select_NV = new System.Windows.Forms.Button();
+            this.btn_Select_BN = new System.Windows.Forms.Button();
+            this.btn_Select_HSBA = new System.Windows.Forms.Button();
+            this.btn_Return = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Menu
@@ -47,61 +47,63 @@ namespace PH2
             this.Menu.TabIndex = 0;
             this.Menu.Text = "Menu";
             // 
-            // Select_NVbtn
+            // btn_Select_NV
             // 
-            this.Select_NVbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Select_NVbtn.Location = new System.Drawing.Point(180, 88);
-            this.Select_NVbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.Select_NVbtn.Name = "Select_NVbtn";
-            this.Select_NVbtn.Size = new System.Drawing.Size(248, 41);
-            this.Select_NVbtn.TabIndex = 1;
-            this.Select_NVbtn.Text = "Xem thông tin nhân viên";
-            this.Select_NVbtn.UseVisualStyleBackColor = true;
+            this.btn_Select_NV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Select_NV.Location = new System.Drawing.Point(180, 88);
+            this.btn_Select_NV.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Select_NV.Name = "btn_Select_NV";
+            this.btn_Select_NV.Size = new System.Drawing.Size(248, 41);
+            this.btn_Select_NV.TabIndex = 1;
+            this.btn_Select_NV.Text = "Xem thông tin nhân viên";
+            this.btn_Select_NV.UseVisualStyleBackColor = true;
+            this.btn_Select_NV.Click += new System.EventHandler(this.btn_Select_NV_Click);
             // 
-            // Select_BNbtn
+            // btn_Select_BN
             // 
-            this.Select_BNbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Select_BNbtn.Location = new System.Drawing.Point(180, 149);
-            this.Select_BNbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.Select_BNbtn.Name = "Select_BNbtn";
-            this.Select_BNbtn.Size = new System.Drawing.Size(248, 41);
-            this.Select_BNbtn.TabIndex = 2;
-            this.Select_BNbtn.Text = "Xem thông tin bệnh nhân";
-            this.Select_BNbtn.UseVisualStyleBackColor = true;
+            this.btn_Select_BN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Select_BN.Location = new System.Drawing.Point(180, 149);
+            this.btn_Select_BN.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Select_BN.Name = "btn_Select_BN";
+            this.btn_Select_BN.Size = new System.Drawing.Size(248, 41);
+            this.btn_Select_BN.TabIndex = 2;
+            this.btn_Select_BN.Text = "Xem thông tin bệnh nhân";
+            this.btn_Select_BN.UseVisualStyleBackColor = true;
+            this.btn_Select_BN.Click += new System.EventHandler(this.btn_Select_BN_Click);
             // 
-            // Select_HSBAbtn
+            // btn_Select_HSBA
             // 
-            this.Select_HSBAbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.Select_HSBAbtn.Location = new System.Drawing.Point(180, 212);
-            this.Select_HSBAbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.Select_HSBAbtn.Name = "Select_HSBAbtn";
-            this.Select_HSBAbtn.Size = new System.Drawing.Size(248, 41);
-            this.Select_HSBAbtn.TabIndex = 3;
-            this.Select_HSBAbtn.Text = "Xem thông tin hồ sơ bệnh án";
-            this.Select_HSBAbtn.UseVisualStyleBackColor = true;
-            this.Select_HSBAbtn.Click += new System.EventHandler(this.Select_HSBAbtn_Click);
+            this.btn_Select_HSBA.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btn_Select_HSBA.Location = new System.Drawing.Point(180, 212);
+            this.btn_Select_HSBA.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Select_HSBA.Name = "btn_Select_HSBA";
+            this.btn_Select_HSBA.Size = new System.Drawing.Size(248, 41);
+            this.btn_Select_HSBA.TabIndex = 3;
+            this.btn_Select_HSBA.Text = "Xem thông tin hồ sơ bệnh án";
+            this.btn_Select_HSBA.UseVisualStyleBackColor = true;
+            this.btn_Select_HSBA.Click += new System.EventHandler(this.btn_Select_HSBA_Click);
             // 
-            // Returnbtn
+            // btn_Return
             // 
-            this.Returnbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Returnbtn.Location = new System.Drawing.Point(180, 274);
-            this.Returnbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.Returnbtn.Name = "Returnbtn";
-            this.Returnbtn.Size = new System.Drawing.Size(248, 41);
-            this.Returnbtn.TabIndex = 5;
-            this.Returnbtn.Text = "Quay lại";
-            this.Returnbtn.UseVisualStyleBackColor = true;
-            this.Returnbtn.Click += new System.EventHandler(this.Returnbtn_Click);
+            this.btn_Return.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Return.Location = new System.Drawing.Point(180, 274);
+            this.btn_Return.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Return.Name = "btn_Return";
+            this.btn_Return.Size = new System.Drawing.Size(248, 41);
+            this.btn_Return.TabIndex = 5;
+            this.btn_Return.Text = "Quay lại";
+            this.btn_Return.UseVisualStyleBackColor = true;
+            this.btn_Return.Click += new System.EventHandler(this.Returnbtn_Click);
             // 
             // MenuTT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.Returnbtn);
-            this.Controls.Add(this.Select_HSBAbtn);
-            this.Controls.Add(this.Select_BNbtn);
-            this.Controls.Add(this.Select_NVbtn);
+            this.Controls.Add(this.btn_Return);
+            this.Controls.Add(this.btn_Select_HSBA);
+            this.Controls.Add(this.btn_Select_BN);
+            this.Controls.Add(this.btn_Select_NV);
             this.Controls.Add(this.Menu);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuTT";
@@ -114,9 +116,9 @@ namespace PH2
         #endregion
 
         private System.Windows.Forms.Label Menu;
-        private System.Windows.Forms.Button Select_NVbtn;
-        private System.Windows.Forms.Button Select_BNbtn;
-        private System.Windows.Forms.Button Select_HSBAbtn;
-        private System.Windows.Forms.Button Returnbtn;
+        private System.Windows.Forms.Button btn_Select_NV;
+        private System.Windows.Forms.Button btn_Select_BN;
+        private System.Windows.Forms.Button btn_Select_HSBA;
+        private System.Windows.Forms.Button btn_Return;
     }
 }

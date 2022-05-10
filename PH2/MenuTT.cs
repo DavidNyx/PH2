@@ -24,9 +24,25 @@ namespace PH2
             this.Close();
         }
 
-        private void Select_HSBAbtn_Click(object sender, EventArgs e)
+        private void btn_Select_NV_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            (new XemTTNV()).ShowDialog();
+            this.Close();
+        }
 
+        private void btn_Select_BN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new XemTTBN()).ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Select_HSBA_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new XemHSBA()).ShowDialog();
+            this.Close();
         }
     }
 }

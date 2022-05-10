@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Returnbtn = new System.Windows.Forms.Button();
+            this.btn_Return = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_BNlist = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_CMND = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_BNlist)).BeginInit();
             this.SuspendLayout();
             // 
-            // Returnbtn
+            // btn_Return
             // 
-            this.Returnbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Returnbtn.Location = new System.Drawing.Point(270, 399);
-            this.Returnbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.Returnbtn.Name = "Returnbtn";
-            this.Returnbtn.Size = new System.Drawing.Size(248, 41);
-            this.Returnbtn.TabIndex = 9;
-            this.Returnbtn.Text = "Quay lại";
-            this.Returnbtn.UseVisualStyleBackColor = true;
+            this.btn_Return.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Return.Location = new System.Drawing.Point(270, 399);
+            this.btn_Return.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Return.Name = "btn_Return";
+            this.btn_Return.Size = new System.Drawing.Size(248, 41);
+            this.btn_Return.TabIndex = 9;
+            this.btn_Return.Text = "Quay lại";
+            this.btn_Return.UseVisualStyleBackColor = true;
+            this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
             // 
             // label1
             // 
@@ -58,13 +59,13 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "THÔNG TIN BỆNH NHÂN";
             // 
-            // dataGridView1
+            // dgv_BNlist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(85, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(630, 296);
-            this.dataGridView1.TabIndex = 7;
+            this.dgv_BNlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_BNlist.Location = new System.Drawing.Point(85, 91);
+            this.dgv_BNlist.Name = "dgv_BNlist";
+            this.dgv_BNlist.Size = new System.Drawing.Size(630, 296);
+            this.dgv_BNlist.TabIndex = 7;
             // 
             // label2
             // 
@@ -75,12 +76,12 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Mã bệnh nhân/CMND";
             // 
-            // textBox1
+            // txt_CMND
             // 
-            this.textBox1.Location = new System.Drawing.Point(525, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
-            this.textBox1.TabIndex = 11;
+            this.txt_CMND.Location = new System.Drawing.Point(525, 64);
+            this.txt_CMND.Name = "txt_CMND";
+            this.txt_CMND.Size = new System.Drawing.Size(137, 20);
+            this.txt_CMND.TabIndex = 11;
             // 
             // button1
             // 
@@ -90,6 +91,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Xem";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // XemTTBN
             // 
@@ -97,14 +99,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_CMND);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Returnbtn);
+            this.Controls.Add(this.btn_Return);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_BNlist);
             this.Name = "XemTTBN";
             this.Text = "XemTTBN";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_BNlist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,11 +114,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Returnbtn;
+        private System.Windows.Forms.Button btn_Return;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_BNlist;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_CMND;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_NVlist = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.Returnbtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_return = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_NVlist)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_NVlist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(630, 323);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_NVlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_NVlist.Location = new System.Drawing.Point(82, 63);
+            this.dgv_NVlist.Name = "dgv_NVlist";
+            this.dgv_NVlist.Size = new System.Drawing.Size(630, 323);
+            this.dgv_NVlist.TabIndex = 0;
             // 
             // label1
             // 
@@ -52,28 +52,30 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "DANH SÁCH NHÂN VIÊN";
             // 
-            // Returnbtn
+            // btn_return
             // 
-            this.Returnbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Returnbtn.Location = new System.Drawing.Point(267, 398);
-            this.Returnbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.Returnbtn.Name = "Returnbtn";
-            this.Returnbtn.Size = new System.Drawing.Size(248, 41);
-            this.Returnbtn.TabIndex = 6;
-            this.Returnbtn.Text = "Quay lại";
-            this.Returnbtn.UseVisualStyleBackColor = true;
+            this.btn_return.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.Location = new System.Drawing.Point(267, 398);
+            this.btn_return.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(248, 41);
+            this.btn_return.TabIndex = 6;
+            this.btn_return.Text = "Quay lại";
+            this.btn_return.UseVisualStyleBackColor = true;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // XemTTNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Returnbtn);
+            this.Controls.Add(this.btn_return);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_NVlist);
             this.Name = "XemTTNV";
             this.Text = "XemTTNV";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.XemTTNV_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_NVlist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,8 +83,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_NVlist;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Returnbtn;
+        private System.Windows.Forms.Button btn_return;
     }
 }
