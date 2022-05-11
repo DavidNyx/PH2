@@ -91,6 +91,12 @@
     <Compile Include="HSBA.Designer.cs">
       <DependentUpon>HSBA.cs</DependentUpon>
     </Compile>
+    <Compile Include="HSBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HSBN.Designer.cs">
+      <DependentUpon>HSBN.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuCSYT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HSBA.resx">
       <DependentUpon>HSBA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HSBN.resx">
+      <DependentUpon>HSBN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

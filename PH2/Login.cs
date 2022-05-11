@@ -25,10 +25,16 @@ namespace PH2
             try
             {
                 Connection.name = u;
-                Connection.con = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=DESKTOP-AAMU6EJ)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=PHANHE2))));User Id=" + u + ";Password=" + p + ";");
+                Connection.con = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=DavidNyx)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl))));User Id=" + u + ";Password=" + p + ";");
                 Connection.con.Open();
+                if (u.Substring(0, 2) == "BN")
+                {
+                    this.Hide();
+                    (new HSBN()).ShowDialog();
+                    this.Close();
+                }
                 OracleCommand cmd = new OracleCommand();
-                cmd.CommandText = "select VAITRO from DNX.NHANVIEN where MA_NV = '" + u + "' ";
+                cmd.CommandText = "select VAITRO from DNX.NHANVIEN where MA_NV = '" + u + "'";
                 cmd.Connection = Connection.con;
                 OracleDataReader dr = cmd.ExecuteReader();
                 dr.Read();
@@ -49,7 +55,7 @@ namespace PH2
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Thông báo","Sai tài khoản hoặc mật khẩu");
+                MessageBox.Show("Đăng nhập không thành công");
             }
             this.Close();
         }

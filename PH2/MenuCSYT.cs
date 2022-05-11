@@ -23,5 +23,12 @@ namespace PH2
             (new Login()).ShowDialog();
             this.Close();
         }
+
+        private void Insert_HSBAbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new HSBA()).ShowDialog();
+            this.Close();
+        }
     }
 }

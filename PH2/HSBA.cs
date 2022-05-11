@@ -49,10 +49,18 @@ namespace PH2
             try
             {
                 string cmd = "INSERT INTO DNX.HSBA(MA_HSBA, MA_BN, NGAY, CHUANDOAN, MA_BS, MA_KHOA, MA_CSYT, KETLUAN) VALUES "
-                    + "'" + txt_Mahs.Text + "','" + txt_Mabn + "',CURRENT_DATE,'" + txt_Chandoan + "','" + txt_Mabs + "','" + txt_Makh + "','" + csyt + "','" + txt_Ketluan + "'";
+                    + "('" + txt_Mahs.Text + "','" + txt_Mabn.Text + "',CURRENT_DATE,'" + txt_Chandoan.Text + "','" + txt_Mabs.Text + "','" + txt_Makh.Text + "','" + csyt + "','" + txt_Ketluan.Text + "')";
                 OracleCommand oda = new OracleCommand(cmd, conn);
                 oda.ExecuteNonQuery();
                 MessageBox.Show("Thêm thành công");
+                cmd = "select * from DNX.HSBA";
+                OracleDataAdapter oda1 = new OracleDataAdapter(cmd, conn);
+                DataSet ds = new DataSet();
+                oda1.Fill(ds);
+                if (ds.Tables.Count > 0)
+                {
+                    dgv_HSlist.DataSource = ds.Tables[0].DefaultView;
+                }
             }
             catch (Exception ex)
             {
@@ -69,6 +77,14 @@ namespace PH2
                 OracleCommand oda = new OracleCommand(cmd, conn);
                 oda.ExecuteNonQuery();
                 MessageBox.Show("Xóa thành công");
+                cmd = "select * from DNX.HSBA";
+                OracleDataAdapter oda1 = new OracleDataAdapter(cmd, conn);
+                DataSet ds = new DataSet();
+                oda1.Fill(ds);
+                if (ds.Tables.Count > 0)
+                {
+                    dgv_HSlist.DataSource = ds.Tables[0].DefaultView;
+                }
             }
             catch (Exception ex)
             {
@@ -88,6 +104,13 @@ namespace PH2
                 txt_Makh.Text = dgv_HSlist.Rows[e.RowIndex].Cells["MA_KHOA"].FormattedValue.ToString();
                 txt_Ketluan.Text = dgv_HSlist.Rows[e.RowIndex].Cells["KETLUAN"].FormattedValue.ToString();
             }
+        }
+
+        private void Returnbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new MenuCSYT()).ShowDialog();
+            this.Close();
         }
     }
 }
