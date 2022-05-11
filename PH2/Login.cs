@@ -25,7 +25,7 @@ namespace PH2
             try
             {
                 Connection.name = u;
-                Connection.con = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=DESKTOP-AAMU6EJ)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=PHANHE1))));User Id=" + u + ";Password=" + p + ";");
+                Connection.con = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=DESKTOP-AAMU6EJ)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=PHANHE2))));User Id=" + u + ";Password=" + p + ";");
                 Connection.con.Open();
                 OracleCommand cmd = new OracleCommand();
                 cmd.CommandText = "select VAITRO from DNX.NHANVIEN where MA_NV = '" + u + "' ";
